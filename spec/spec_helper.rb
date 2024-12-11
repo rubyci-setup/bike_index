@@ -15,6 +15,7 @@ if ENV["FAST_CI_SECRET_KEY"]
 
   RSpec::Core::Runner.prepend(FastCI::RunnerPrepend)
 end
+
 RSpec.configure do |config|
   # Use color in STDOUT
   config.color = true
